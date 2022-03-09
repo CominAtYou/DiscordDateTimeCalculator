@@ -10,9 +10,8 @@ public class WinTrayIcon {
     public static TrayIcon createTrayIcon() throws AWTException {
         SystemTray tray = SystemTray.getSystemTray();
         Image image = Toolkit.getDefaultToolkit().createImage(WinTrayIcon.class.getResource("/trayicon.png"));
-        TrayIcon trayIcon = new TrayIcon(image, "Discord Date Extractor");
+        TrayIcon trayIcon = new TrayIcon(image, "Discord Date Calculator");
         trayIcon.setImageAutoSize(true);
-        trayIcon.setToolTip("Discord Date Calculator");
         tray.add(trayIcon);
         return trayIcon;
     }

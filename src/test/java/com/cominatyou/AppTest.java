@@ -8,7 +8,6 @@ import org.junit.Test;
  * Unit test for simple App.
  */
 public class AppTest {
-    App app;
     @Test
     public void testMessageEpochConversion() {
         assertEquals("Sep 13, 2021 at 12:23 AM", App.getSnowflakeDateString(886844622167494706L));
